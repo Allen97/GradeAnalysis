@@ -5,14 +5,14 @@ import App from './App'
 import MuseUI from 'muse-ui'
 import router from './router'
 import Axios from 'axios'
+import VeeValidate from 'Vee-validate'
 
 import 'muse-ui/dist/muse-ui.css'
-import './assets/vendors.bundle.css'
-import './assets/style.bundle.css'
 import 'vue2-animate/dist/vue2-animate.min.css'
 
 Vue.config.productionTip = false
 Vue.use(MuseUI)
+Vue.use(VeeValidate)
 Vue.prototype.$http = Axios
 
 /* eslint-disable no-new */
